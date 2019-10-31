@@ -178,3 +178,9 @@ source "$BASH_IT"/bash_it.sh
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=~/.local/bin:$PATH
+if which ruby >/dev/null && which gem >/dev/null; then
+    PATH="$(ruby -r rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+fi
+DEBEMAIL="omarpurataf@gmail.com"
+DEBFULLNAME="Omar Jair Purata Funes"
+export DEBEMAIL DEBFULLNAME
