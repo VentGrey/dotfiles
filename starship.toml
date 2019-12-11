@@ -1,0 +1,32 @@
+# Common configs
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜"     # The "symbol" segment is being set to "➜"
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[cmd_duration]
+disabled = true
+
+[hostname]
+ssh_only = false
+disabled = false
+
+[username]
+show_always = true
+
+[git_status]
+ahead     = '⟫'
+behind    = '⟪'
+diverged  = '⦓⦔'
+conflicted = "🏳"
+stashed = "📦"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "👅"
+deleted = "🗑"
