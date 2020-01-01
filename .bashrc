@@ -111,6 +111,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+<<<<<<< HEAD
 
 # If not running interactively, don't do anything
 case $- in
@@ -172,3 +173,7 @@ export SCM_CHECK=true
 
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
+=======
+# Enable starship
+eval "$(starship init bash)"
+>>>>>>> 8826830442277af7b0f9e29ca69c01e3c3617922
