@@ -1,0 +1,41 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "[➜](bold green)"     # The "symbol" segment is being set to "➜"
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+use_symbol_for_status = true
+
+# Avoid cluttering the terminal with useless time measurements
+[cmd_duration]
+disabled = true
+
+# Show Username
+[username]
+disabled = false
+show_always = true
+style_user = "bright-blue bold"
+style_root = "red bold"
+format = "[ $user]($style) [λ](fg:#FF7700 bold) "
+
+# Avoid line break
+[line_break]
+disabled = true
+
+# Show git status
+[git_status]
+ahead = "⇡ ${count} "
+staged = '[++\($count\)](green)'
+diverged = "⇕⇡ ${ahead_count} ⇣ ${behind_count}"
+behind = "⇣ ${count} "
+
+# Show git states
+[git_state]
+cherry_pick = "[🍒 PICKING](bold red)"
+
+# Show exit code status
+[status]
+disabled = false
+format = " [$status]($style) "
