@@ -1,5 +1,12 @@
+[commit]
+    gpgSign = true
+
 [user]
-	email = omarpurataf@gmail.com
 	name = VentGrey
-[github]
-	user = VentGrey
+	email = omarpurataf@gmail.com
+	signingkey = 447A446B66991F6D
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
